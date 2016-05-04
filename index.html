@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>360商城</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/1.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/1.js"></script>
+    <style>
+        html, body {
+            position: relative;
+            height: 100%;
+        }
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color:#000;
+            margin: 0;
+            padding: 0;
+        }
+        .swiper-container {
+            max-width: 640px;
+            height: 300px;
+
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        .swiper-slide a{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide a img{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<!--<div class="topBox">
+    <div class="topBar">
+        <div class="leftBar">
+            <div class="leftBarItem">
+                <a href="javascript:;">企业采购</a>
+            </div>
+            <div class="leftBarItem">
+                <a href="javascript:;">帮助中心</a>
+            </div>
+            <div class="leftBarItem">
+                <a href="javascript:;">收藏本站</a>
+            </div>
+            <div class="leftBarItem">
+                <a href="javascript:;">商品入驻</a>
+            </div>
+            <div class="leftBarItem">
+                <a href="javascript:;">老人手环申请</a>
+            </div>
+
+        </div>
+        <div class="rightBar">
+            <div class="rightBarItem">
+                <a href="javascript:;">登录</a>
+            </div>
+            <div class="rightBarItem">
+                <a href="javascript:;">注册</a>
+            </div>
+            <div class="rightBarItem">
+                <a href="javascript:;">F码购买</a>
+            </div>
+            <div class="rightBarItem">
+                <a href="javascript:;">
+                    <i></i>
+                    手机360商城
+                </a>
+            </div>
+            <div class="rightBarItem">
+                <a href="javascript:;">我的订单</a>
+            </div>
+            <div class="rightBarItem">
+                <a href="javascript:;">
+                    <i></i>
+                    购物车
+                    <span>(0)</span>
+                </a>
+                <div class="hidden">
+                    <div class="tips">
+                        您的购物车还没有商品，赶紧去选购吧！
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>-->
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <a href="javascript:;">
+                <img src="img/wheel/1.jpg" alt="">
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="javascript:;">
+                <img src="img/wheel/2.png" alt="">
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="javascript:;">
+                <img src="img/wheel/3.jpg" alt="">
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="javascript:;">
+                <img src="img/wheel/4.jpg" alt="">
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="javascript:;">
+                <img src="img/wheel/5.jpg" alt="">
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="javascript:;">
+                <img src="img/wheel/6.png" alt="">
+            </a>
+        </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+<script src="js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 0,
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false
+    });
+</script>
+<div class="qlink">
+    <a href="javascript:;">
+        <img src="img/qlink/1.png" alt="">
+        <span>智品牌</span>
+    </a>
+    <a href="javascript:;">
+        <img src="img/qlink/2.png" alt="">
+        <span>360°</span>
+    </a>
+    <a href="javascript:;">
+        <img src="img/qlink/3.png" alt="">
+        <span>F码</span>
+    </a>
+    <a href="javascript:;">
+        <img src="img/qlink/4.png" alt="">
+        <span>社区</span>
+    </a>
+    <a href="javascript:;">
+        <img src="img/qlink/4.png" alt="">
+        <span>一元夺宝</span>
+    </a>
+</div>
+<div class="first-news">
+    <span class="first-icon">
+        <img src="img/first-news/1.jpg" alt="">
+    </span>
+    <div class="scrolltext">
+        <div class="box">
+            <a href="javascript:;">
+                <em>专题</em>
+                <i>智能亦有温度”我和春天有个约会</i>
+            </a>
+            <a href="javascript:;">
+                <em>推荐</em>
+                <i>智能尖货明星产品大曝光！特惠一览无余~</i>
+            </a>
+            <a href="javascript:;">
+                <em>专题</em>
+                <i>“智能亦有温度”我和春天有个约会</i>
+            </a>
+            <a href="javascript:;">
+                <em>专题</em>
+                <i>“智能亦有温度”我和春天有个约会</i>
+            </a>
+            <a href="javascript:;">
+                <em>专题</em>
+                <i>“智能亦有温度”我和春天有个约会</i>
+            </a>
+            <a href="javascript:;">
+                <em>专题</em>
+                <i>“智能亦有温度”我和春天有个约会</i>
+            </a>
+            <a href="javascript:;">
+                <em>专题</em>
+                <i>“智能亦有温度”我和春天有个约会</i>
+            </a>
+            <a href="javascript:;">
+                <em>专题</em>
+                <i>“智能亦有温度”我和春天有个约会</i>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="buy-box">
+    <div class="buy-menu">
+        <span class="buyred">掌上抢</span>
+        <div class="time">
+            <div class="starttime">
+                距结束
+                <i>03</i>:
+                <i>21</i>:
+                <i>59</i>
+            </div>
+        </div>
+        <a href="javascript:;" class="session">惊爆价限时抢购</a>
+    </div>
+    <div class="buy-list">
+        <div class="buy-item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/buy-box/1.jpg">
+                </span>
+                <span class="start-title">ORICO苹果安卓两用数据线</span>
+                <span class="start-price">￥29</span>
+            </a>
+        </div>
+        <div class="buy-item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/buy-box/1.jpg">
+                </span>
+                <span class="start-title">ORICO苹果安卓两用数据线</span>
+                <span class="start-price">￥29</span>
+            </a>
+        </div>
+        <div class="buy-item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/buy-box/1.jpg">
+                </span>
+                <span class="start-title">ORICO苹果安卓两用数据线</span>
+                <span class="start-price">￥29</span>
+            </a>
+        </div>
+
+    </div>
+</div>
+<div class="start-product">
+    <h2 class="floor-title">
+        <em>-</em>
+        明星单品
+        <em>-</em>
+    </h2>
+    <div class="product-item">
+        <a href="javscript:;">
+            <span class="star-tips">
+                <img src="img/start-product/1.png">
+                <em class="price-favorable">送内存卡</em>
+            </span>
+            <span class="pimg">
+                <img src="img/start-product/1.1.jpg" class="ui-imglazyload">
+            </span>
+            <span class="start-title">360智能摄像机夜视版</span>
+            <span class="start-price">
+                <b class="pdot">￥</b>199
+            </span>
+        </a>
+    </div>
+    <div class="product-item">
+        <a href="javscript:;">
+            <span class="star-tips">
+                <img src="img/start-product/1.png">
+                <em class="price-favorable">送内存卡</em>
+            </span>
+            <span class="pimg">
+                <img src="img/start-product/1.1.jpg" class="ui-imglazyload">
+            </span>
+            <span class="start-title">360智能摄像机夜视版</span>
+            <span class="start-price">
+                <b class="pdot">￥</b>199
+            </span>
+        </a>
+    </div>
+    <div class="product-item">
+        <a href="javscript:;">
+            <span class="star-tips">
+                <img src="img/start-product/1.png">
+                <em class="price-favorable">送内存卡</em>
+            </span>
+            <span class="pimg">
+                <img src="img/start-product/1.1.jpg" class="ui-imglazyload">
+            </span>
+            <span class="start-title">360智能摄像机夜视版</span>
+            <span class="start-price">
+                <b class="pdot">￥</b>199
+            </span>
+        </a>
+    </div>
+    <div class="product-item">
+        <a href="javscript:;">
+            <span class="star-tips">
+                <img src="img/start-product/1.png">
+                <em class="price-favorable">送内存卡</em>
+            </span>
+            <span class="pimg">
+                <img src="img/start-product/1.1.jpg" class="ui-imglazyload">
+            </span>
+            <span class="start-title">360智能摄像机夜视版</span>
+            <span class="start-price">
+                <b class="pdot">￥</b>199
+            </span>
+        </a>
+    </div>
+    <div class="product-item">
+        <a href="javscript:;">
+            <span class="star-tips">
+                <img src="img/start-product/1.png">
+                <em class="price-favorable">送内存卡</em>
+            </span>
+            <span class="pimg">
+                <img src="img/start-product/1.1.jpg" class="ui-imglazyload">
+            </span>
+            <span class="start-title">360智能摄像机夜视版</span>
+            <span class="start-price">
+                <b class="pdot">￥</b>199
+            </span>
+        </a>
+    </div>
+    <div class="product-item">
+        <a href="javscript:;">
+            <span class="star-tips">
+                <img src="img/start-product/1.png">
+                <em class="price-favorable">送内存卡</em>
+            </span>
+            <span class="pimg">
+                <img src="img/start-product/1.1.jpg" class="ui-imglazyload">
+            </span>
+            <span class="start-title">360智能摄像机夜视版</span>
+            <span class="start-price">
+                <b class="pdot">￥</b>199
+            </span>
+        </a>
+    </div>
+
+</div>
+<div class="top-level">
+    <h2 class="floor-title">
+        <em>-</em>
+        新品上市
+        <em>-</em>
+    </h2>
+    <div class="top-level-item">
+        <a href="javascript:;">
+            <span>
+                <img src="img/top-level/1.1.jpg" class="ui-imglazyload">
+                <i class="price-r">￥149</i>
+            </span>
+            <strong class="ds-1">香港九猪便携多功能果汁杯</strong>
+            <p class="ds-2">迷你全能榨汁杯 健康美味带着走 走到哪里榨到哪儿</p>
+
+        </a>
+    </div>
+    <div class="top-level-item">
+        <a href="javascript:;">
+            <span>
+                <img src="img/top-level/1.1.jpg" class="ui-imglazyload">
+                <i class="price-r">￥149</i>
+            </span>
+            <strong class="ds-1">香港九猪便携多功能果汁杯</strong>
+            <p class="ds-2">迷你全能榨汁杯 健康美味带着走 走到哪里榨到哪儿</p>
+
+        </a>
+    </div>
+    <div class="top-level-item">
+        <a href="javascript:;">
+            <span>
+                <img src="img/top-level/1.1.jpg" class="ui-imglazyload">
+                <i class="price-r">￥149</i>
+            </span>
+            <strong class="ds-1">香港九猪便携多功能果汁杯</strong>
+            <p class="ds-2">迷你全能榨汁杯 健康美味带着走 走到哪里榨到哪儿</p>
+
+        </a>
+    </div>
+</div>
+<div class="mobile-floor">
+    <span class="floor-title">
+        <em>-</em>
+        手机
+        <em>-</em>
+    </span>
+    <div class="floor-bigimg">
+        <a href="javascript:;">
+            <img src="img/mobile-floor/1.1.jpg" alt="">
+        </a>
+    </div>
+    <div class="item-list">
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+
+    </div>
+</div>
+<div class="mobile-floor">
+    <span class="floor-title">
+        <em>-</em>
+        手机
+        <em>-</em>
+    </span>
+    <div class="floor-bigimg">
+        <a href="javascript:;">
+            <img src="img/mobile-floor/1.1.jpg" alt="">
+        </a>
+    </div>
+    <div class="item-list">
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+
+    </div>
+</div>
+<div class="mobile-floor">
+    <span class="floor-title">
+        <em>-</em>
+        手机
+        <em>-</em>
+    </span>
+    <div class="floor-bigimg">
+        <a href="javascript:;">
+            <img src="img/mobile-floor/1.1.jpg" alt="">
+        </a>
+    </div>
+    <div class="item-list">
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+
+    </div>
+</div>
+<div class="mobile-floor">
+    <span class="floor-title">
+        <em>-</em>
+        手机
+        <em>-</em>
+    </span>
+    <div class="floor-bigimg">
+        <a href="javascript:;">
+            <img src="img/mobile-floor/1.1.jpg" alt="">
+        </a>
+    </div>
+    <div class="item-list">
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+
+    </div>
+</div>
+<div class="mobile-floor">
+    <span class="floor-title">
+        <em>-</em>
+        手机
+        <em>-</em>
+    </span>
+    <div class="floor-bigimg">
+        <a href="javascript:;">
+            <img src="img/mobile-floor/1.1.jpg" alt="">
+        </a>
+    </div>
+    <div class="item-list">
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+
+    </div>
+</div>
+<div class="mobile-floor">
+    <span class="floor-title">
+        <em>-</em>
+        手机
+        <em>-</em>
+    </span>
+    <div class="floor-bigimg">
+        <a href="javascript:;">
+            <img src="img/mobile-floor/1.1.jpg" alt="">
+        </a>
+    </div>
+    <div class="item-list">
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="javascript:;">
+                <span class="pimg">
+                    <img src="img/mobile-floor/1.2.jpg" class="ui-imglazyload">
+                </span>
+                <span class="start-title">大神Note3全网通</span>
+                <p class="product-norms">千元指纹智能手机</p>
+                <span class="start-price">
+                    <b class="pdot">￥</b>999
+                </span>
+            </a>
+        </div>
+
+    </div>
+</div>
+<a href="javasctipt:;" class="morepro">点击查看更多商品&gt;&gt;</a>
+<div class="mod-help">
+    <div class="help-content">
+        <div class="item">
+            <i>7</i>
+            <em>7天无理由退货</em>
+        </div>
+        <div class="item">
+            <i>7</i>
+            <em>7天无理由退货</em>
+        </div>
+        <div class="item">
+            <i>7</i>
+            <em>7天无理由退货</em>
+        </div>
+
+    </div>
+    <div class="help-number">
+        <p>客服热线：
+            <a href="tel:400-6822-360">400-6822-360</a>
+            周一到周日 9:00-18:00
+        </p>
+        <p class="copyright">
+            360商城©2013-2016 版权所有
+        </p>
+    </div>
+</div>
+<div class="fixed-null"></div>
+<div class="fixed">
+    <div class="item">
+        <a href="javascript:;">
+            <em class="layer-home"></em>
+            <span>首页</span>
+        </a>
+    </div>
+    <div class="item">
+        <a href="javascript:;">
+            <em class="layer-home"></em>
+            <span>分类</span>
+        </a>
+    </div>
+    <div class="item">
+        <a href="javascript:;">
+            <em class="layer-home"></em>
+            <span>购物车</span>
+        </a>
+    </div>
+    <div class="item">
+        <a href="javascript:;">
+            <em class="layer-home"></em>
+            <span>我</span>
+        </a>
+    </div>
+</div>
+</body>
+</html>
